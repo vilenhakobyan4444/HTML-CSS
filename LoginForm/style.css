@@ -1,1 +1,97 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(img/bg.jpg);
+
+}
+h2{
+    margin: 0;
+    color: gainsboro;
+    text-shadow: 0 0 5px #79D1E9;
+    font-family:Arial;
+}
+
+#formBlock{
+    width: 39%;
+    height: 25vw;
+    border: 1px solid#79D1E9;
+    border-radius: 5px;
+    margin: auto;
+    box-shadow: 0 0 10px #79D1E9;
+    padding: 15px;
+    background-image: url(img/bgf.jpg);
+    position: relative;
+    top: 100px;
+}
+#centr{
+    display: flex;
+    justify-content: center;
+}
+#leftInputsBlock{
+    width: 50%;
+    display: inline-block;
+    margin-right: 20px;
+}
+#rightInputsBlock{
+    width: 50%;
+    display: inline-block
+}
+
+input {
+    width: 88%;
+    height: 27px;
+    display: block;
+    margin-top: 20px; 
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid gray;
+    background-image: url(img/bg.jpg);
+    color: white;
+    font-family: "Font Awesome 5 Free";
+    content: '\f077';
+    font-weight: 600;
+    font-size: 13px;
+}
+input:focus{
+    border-color: #79D1E9;
+}
+i.fas {
+    width: 13px;
+    height: 13px;
+    line-height: 71px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    float: left;
+    color:#ECECEC;
+    left: 6px;
+    font-size: 12px;
+}
+i.fas + input {padding-left: 26px;}
+button{
+    line-height: 12px;
+    width: 55%;
+    height: 14%;
+    float: right;
+    margin-top: 23px;
+    border: none;
+    padding: 9px;
+    background: none;
+    border: 1px solid #323232;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.5s;
+    filter: blur(0.3px);
+    cursor: pointer;
+}
+button:hover{
+    border-color: rgb(255, 155, 155);
+    color:rgb(255, 155, 155); 
+    box-shadow: 0 0 11px #A30800;
+    text-shadow: 0 0 11px #A30800;
+}
+#buttonS{font-family:Arial;}
+    
+
 
