@@ -3,7 +3,6 @@ body{
     margin: 0;
     padding: 0;
     background-image: url(img/bg.jpg);
-
 }
 h2{
     margin: 0;
@@ -11,7 +10,6 @@ h2{
     text-shadow: 0 0 5px #79D1E9;
     font-family:Arial;
 }
-
 #formBlock{
     width: 39%;
     height: 25vw;
@@ -37,7 +35,6 @@ h2{
     width: 50%;
     display: inline-block
 }
-
 input {
     width: 88%;
     height: 27px;
@@ -53,9 +50,7 @@ input {
     font-weight: 600;
     font-size: 13px;
 }
-input:focus{
-    border-color: #79D1E9;
-}
+input:focus{border-color: #79D1E9;}
 i.fas {
     width: 13px;
     height: 13px;
@@ -92,6 +87,3 @@ button:hover{
     text-shadow: 0 0 11px #A30800;
 }
 #buttonS{font-family:Arial;}
-    
-
-
