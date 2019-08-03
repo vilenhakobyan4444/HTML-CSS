@@ -26,7 +26,6 @@ h2{
     box-shadow: 0 0 10px #79D1E9;
     padding: 15px;
     background-image: url(img/bgf.jpg);
-    position: relative;
 }
 #centr{
     display: flex;
