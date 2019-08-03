@@ -1,8 +1,16 @@
+html{height: 100%;}
 body{
+    height: 100%;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     background-image: url(img/bg.jpg);
+}
+#wrapper{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 h2{
     margin: 0;
@@ -11,8 +19,7 @@ h2{
     font-family:Arial;
 }
 #formBlock{
-    width: 39%;
-    height: 25vw;
+    width: 26%;
     border: 1px solid#79D1E9;
     border-radius: 5px;
     margin: auto;
@@ -20,7 +27,6 @@ h2{
     padding: 15px;
     background-image: url(img/bgf.jpg);
     position: relative;
-    top: 100px;
 }
 #centr{
     display: flex;
