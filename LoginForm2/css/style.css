@@ -30,7 +30,7 @@ h3{
 }
 p{
     margin: 10px 0;
-    font-size: 1.1vw;
+    font-size: 0.8vw;
     color: rgb(218, 223, 252);
     font-family: 'Roboto', sans-serif;
 }
@@ -82,7 +82,7 @@ textarea{
 }
 input,textarea{
     margin-top: 5%;
-    padding: 1vw;
+    padding: 0.6vw;
     border: none;
     border-radius: 3px;
     color: #444444;
@@ -100,7 +100,7 @@ button{
     outline: none;
     cursor: pointer;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.3vw;
+    font-size: 1vw;
     color: #00a1ff;
 }
 button:hover{
@@ -108,3 +108,4 @@ button:hover{
     color: whitesmoke;
     transition: 0.4s;
 }
+
