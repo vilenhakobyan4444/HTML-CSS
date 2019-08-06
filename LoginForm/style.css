@@ -103,8 +103,17 @@ button:hover{
     float: right;
     margin-top: 18px;
 }
-
-
+@media only screen and (max-width: 1020px) {
+    #centr{
+        flex-direction: column;
+    }
+    #leftInputsBlock,#rightInputsBlock,#robotBlock,#buttonBlock{
+        margin-right: 0;
+        margin: 0 auto;
+        width: unset;
+    }
+    #robot{float: left;}
+  }
 @media only screen and (max-width: 1020px) {
     #centr{
         flex-direction: column;
