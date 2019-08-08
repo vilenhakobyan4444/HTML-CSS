@@ -168,6 +168,7 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-bottom: 3vw;
 }
 #portBlocks div{
     width: 13vw;
