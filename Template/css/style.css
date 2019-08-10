@@ -96,21 +96,11 @@ h2{
     border-bottom: 1px solid #EC4E44;
     border-top: none;
 }
-/* #dropMenu li::after{
-    float: left;
-    width: 91%;
-    display: block;
-    color: white;
-    border-top:none;
-    background: black;
-    content: " "
-} */
 #dropMenu li:nth-child(5){border: none;}
 #dropMenu li:hover{
     text-shadow: 0 0 10px #EC4E44;
     color: #EC4E44;
 }
-
 nav{
     position: absolute;
     right: 0;
@@ -192,13 +182,15 @@ p{
 }
 #servicesBlocks{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 #servicesBlocks div{
-    width: 13vw;
-    height: 13.7vw;
+    width: 250px;
+    height: 270px;
     justify-content: space-between;
     position: relative;
+    margin: 10px;
 }
 #bl:last-child {
     margin-right: 0;
@@ -210,7 +202,7 @@ p{
     top: 50%;
     transform: translate(-50%, -50%);
     color: white;
-    font-size: 2vw;
+    font-size: 30px;
 }
                                          /****PORTFOLIO****/
                                          /****PORTFOLIO****/
@@ -218,14 +210,14 @@ p{
 #portBlocks{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     padding-bottom: 3vw;
 }
 #portBlocks div{
-    width: 13vw;
-    margin: 10px 0;
+    width: 250px;
+    margin: 10px;
     margin-top: 10px;
-    height:13.2vw;
+    height: 250px;
 }
 #portBlocks div:first-child{
     background-image: url(../img/image1.JPG);
@@ -279,12 +271,7 @@ p{
 
 
 
-@media screen and (max-width: 1200px){
-    #servicesBlocks {
-       flex-wrap: wrap;
-    }
-    #servicesBlocks div{margin: 0}
-  }
+
   @media screen and (max-width: 1000px){
     .flex{display: none}
     nav{display: none}
@@ -296,3 +283,4 @@ p{
     }
    
   }
+
