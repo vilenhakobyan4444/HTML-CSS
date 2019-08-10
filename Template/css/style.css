@@ -72,15 +72,43 @@ h2{
 }
 #dropMenu{
     display: none;
+    height: 18vw;
+    position: relative;
+}
+#dropMenu::after{
+    width: 100%;
+    height: 18vw;
+    background: black;
+    opacity: 0.5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: " ";
 }
 #dropMenu li{
+    text-align: center;
+    position: relative;
+    z-index: 9;
+    float: left;
+    width: 89%;
+    display: block;
+    color: white;
+    border-bottom: 1px solid #EC4E44;
+    border-top: none;
+}
+/* #dropMenu li::after{
     float: left;
     width: 91%;
     display: block;
     color: white;
-}
+    border-top:none;
+    background: black;
+    content: " "
+} */
+#dropMenu li:nth-child(5){border: none;}
 #dropMenu li:hover{
     text-shadow: 0 0 10px #EC4E44;
+    color: #EC4E44;
 }
 
 nav{
@@ -257,8 +285,14 @@ p{
     }
     #servicesBlocks div{margin: 0}
   }
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 1000px){
     .flex{display: none}
     nav{display: none}
     #navbar .fas{display: block;}
+  }
+  @media screen and (min-width: 1000px){
+    #dropMenu,#dropMenu li,#dropMenu::after {
+        display: none;
+    }
+   
   }
