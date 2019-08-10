@@ -22,8 +22,9 @@
                 <div id="navbar">
                     <div id="logoBlock">
                         <div id="imgBlcok"><img id="logo" src="img/logo.jpg" alt="logo"></div>
-                        <h2>FLEX</h2>
+                        <h2 class="flex">FLEX</h2>
                     </div>
+                    <i id="toggle" onclick="menu()" class="fas fa-bars"></i>
                     <nav>
                         <ul>
                             <li>Home</li>
@@ -33,6 +34,16 @@
                             <li>Contact</li>
                         </ul>
                     </nav>
+                </div>
+                <div id="dropMenu">
+                        
+                                <ul>
+                                    <li>Home</li>
+                                    <a href="#servicesBlocks"><li>Services</li></a>
+                                    <a href="#portBlocks"><li>Portfolio</li></a>
+                                    <li>Team</li>
+                                    <li>Contact</li>
+                                </ul>
                 </div>
                 <div id="digitalBlock">
                         <h3>DIGITAL STUDIO</h3>
@@ -68,5 +79,20 @@
             </div>
         </main>
     </div>
+
+
+    <script>
+        var click = 0;
+        function menu() {
+           var dropBlock = document.getElementById("dropMenu");
+           click++;
+           if(click%2!=0){
+                dropBlock.style.display = "block";
+           }
+           else{
+                dropBlock.style.display = "none";  
+           }
+        }
+    </script>
 </body>
 </html>
