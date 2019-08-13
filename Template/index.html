@@ -10,8 +10,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div id="wrapper">
-        <header>
+    <div onscroll="func()" id="wrapper">
+        <header id="header">
             <div id="headerCentr">
                 <div id="iconsBlcok">
                         <div><i class="fab fa-facebook-f"></i></div>
@@ -19,32 +19,38 @@
                         <div><i class="fas fa-volleyball-ball"></i></div>
                         <div><i class="fab fa-linkedin-in"></i></div>
                 </div>
+    <div id="haupt">     
+          
                 <div id="navbar">
                     <div id="logoBlock">
-                        <div id="imgBlcok"><img id="logo" src="img/logo.jpg" alt="logo"></div>
-                        <h2 class="flex">FLEX</h2>
+                        <div id="imgBlcok"></div>
+                        <h2  class="flex">FLEX</h2>
                     </div>
-                    <i id="toggle" onclick="menu()" class="fas fa-bars"></i>
+                    <div id="toggleDiv"><i id="toggle" onclick="menu()" class="fas fa-bars"></i></div>
                     <nav>
                         <ul>
-                            <li>Home</li>
-                            <li>Services</li>
-                            <li>Portfolio</li>
-                            <li>Team</li>
+                            <a href="#"><li>Home</li></a>
+                            <a href="#servicesText"><li>Services</li></a>
+                            <a href="#portfolioText"><li>Portfolio</li></a>
+                            <a href="#teamText"><li>Team</li></a>
                             <li>Contact</li>
                         </ul>
                     </nav>
                 </div>
-                <div id="dropMenu">
-                        
-                                <ul>
-                                    <li>Home</li>
-                                    <a href="#servicesBlocks"><li>Services</li></a>
-                                    <a href="#portBlocks"><li>Portfolio</li></a>
-                                    <li>Team</li>
-                                    <li>Contact</li>
-                                </ul>
+
+
+                <div id="globalNav"> 
+                    <div id="dropMenu">
+                        <ul>
+                            <a href="#"><li>Home</li></a>
+                            <a href="#servicesText"><li>Services</li></a>
+                            <a href="#portfolioText"><li>Portfolio</li></a>
+                            <a href="#teamText"><li>Team</li></a>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
                 </div>
+    </div>                
                 <div id="digitalBlock">
                         <h3>DIGITAL STUDIO</h3>
                         <h6>LET US DESIGN YOUR WEBSITE</h6>
@@ -52,46 +58,164 @@
                 </div>
             </div>
         </header>
+        <div class="dotsBlock">
+            <div></div> 
+            <div></div> 
+            <div></div> 
+        </div>
         <main>
             <div id="servicesText">
                 <h4>OUR SERVICES</h4>
                 <p>LET US HELP CREATE PROFESSIONAL WEBSITES</p>
             </div>
             <div id="servicesBlocks">
-                <div style="background:#1BBC9B"><i class="fa fa-code"></i></div>
-                <div style="background: #E67F22"><i class="fa fa-paper-plane"></i></div>
-                <div style="background:#3598DB"><i class="fa fa-home"></i></div>
-                <div style="background:#2DCC72"><i class="fa fa-flask"></i></div>
+                    <div style="background:#1BBC9B;position: relative"><i class="fa fa-code"></i>
+                        <div class="opa" style="width:100%;background:#1BBC9B" >
+                          <h4>HTML5 CODING</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet.</p>
+                        </div>
+                    </div>
+                    <div style="background: #E67F22"><i class="fa fa-paper-plane"></i>
+                        <div class="opa" style="width:100%;background: #E67F22">
+                                <h4>HTML5 CODING</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet.</p>
+                        </div>
+                    </div>
+                    <div style="background:#3598DB"><i class="fa fa-home"></i>
+                        <div class="opa" style="width:100%;background:#3598DB" >
+                                <h4>HTML5 CODING</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet.</p>
+                        </div>
+                    </div>
+                    <div style="background:#2DCC72"><i class="fa fa-flask"></i>
+                        <div class="opa" style="width:100%;background:#2DCC72">
+                                <h4>HTML5 CODING</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet.</p>
+                        </div>
+                    </div>
             </div>
-            <div id="servicesText">
+
+            <div id="portfolioText" class="portfolioText">
                     <h4>OUR PORTFOLIO</h4>
                     <p>WHAT WE HAVE DONE SO FAR</p>
             </div>
             <div id="portBlocks">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+                    <div style="position: relative">
+                        <div class="opa" style="width:100%;background:#EC523F" >
+                          <h4>HTML5 CODING</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet.</p>
+                        </div>
+                    </div>
+                    <div style="position: relative">
+                        <div class="opa" style="width:100%;background: #EC523F">
+                                <h4>HTML5 CODING</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet.</p>
+                        </div>
+                    </div>
+                    <div style="position: relative">
+                        <div class="opa" style="width:100%;background:#EC523F" >
+                                <h4>HTML5 CODING</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet.</p>
+                        </div>
+                    </div>
+                    <div style="position: relative">
+                        <div class="opa" style="width:100%;background:#EC523F">
+                                <h4>HTML5 CODING</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet.</p>
+                        </div>
+                    </div>
+                    <div style="position: relative">
+                        <div class="opa" style="width:100%;background:#EC523F" >
+                          <h4>HTML5 CODING</h4>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet.</p>
+                        </div>
+                    </div>
+                    <div style="position: relative">
+                        <div class="opa" style="width:100%;background: #EC523F">
+                                <h4>HTML5 CODING</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet.</p>
+                        </div>
+                    </div>
+                    <div style="position: relative">
+                        <div class="opa" style="width:100%;background:#EC523F" >
+                                <h4>HTML5 CODING</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet.</p>
+                        </div>
+                    </div>
+                    <div style="position: relative">
+                        <div class="opa" style="width:100%;background:#EC523F">
+                                <h4>HTML5 CODING</h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim, assumenda, eveniet, consectetur, ex doloribus veniam asperiores incidunt mollitia placeat aniet.</p>
+                        </div>
+                    </div>
+            </div>
+            <div id="teamText">
+                    <h4>OUR TEAM</h4>
+                    <p>OUR PEOPLE ARE VERY UNITED FOR YOUR SUCCESS</p>
+            </div>
+            <div id="teamBlocks">
+                    <div style="position: relative">
+                        <div class="opa" style="width:100%;background:#EC523F" >
+                            <h4>TRACY</h4>
+                            <p>DESIGNER</p>
+                            <a id="teamI"><i class="fab fa-facebook-f"></i></a>
+                            <a id="teamI"><i class="fab fa-twitter"></i></a>
+                            <a id="teamI"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div style="position: relative">
+                        <div class="opa" style="width:100%;background: #EC523F">
+                            <h4>CINDY</h4>
+                            <p>DEVELOPER</p>
+                            <a id="teamI"><i class="fab fa-facebook-f"></i></a>
+                            <a id="teamI"><i class="fab fa-twitter"></i></a>
+                            <a id="teamI"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div style="position: relative">
+                        <div class="opa" style="width:100%;background:#EC523F" >
+                            <h4>MARY</h4>
+                            <p>DIRECTOR</p>
+                            <a id="teamI"><i class="fab fa-facebook-f"></i></a>
+                            <a id="teamI"><i class="fab fa-twitter"></i></a>
+                            <a id="teamI"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+                    <div style="position: relative">
+                        <div class="opa" style="width:100%;background:#EC523F">
+                            <h4>LINDA</h4>
+                            <p>CHIEF EXECUTIVE</p>
+                            <a id="teamI"><i class="fab fa-facebook-f"></i></a>
+                            <a id="teamI"><i class="fab fa-twitter"></i></a>
+                            <a id="teamI"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+            </div>
+            <div id="contact">
+                    <h4>CONTACT</h4>
+                    <p>SEND A MESSAGE TO US</p>
+            </div>
+            <div id="conWrapper"> 
+                <div id="conText">
+                    <p>Flex is a Bootstrap v3.1.1 HTML CSS web template by templatemo. Slider images and portfolio images are from Unsplash website. Thank you for visiting. Please tell your friends about templatemo.</p>
+                    <p>Hic, suscipit, praesentium earum quod ea distinctio impedit ullam deserunt minus dolore quibusdam quis saepe aliquam doloribus voluptatibus eum excepturi. Aenean semper erat neque. Nunc et scelerisque nunc, in adipiscing magna.</p>
+                    <p>Duis ullamcorper tortor tellus. Ut diam libero, ultricies non augue a, mollis congue risus. Fusce a quam eget nisi luctus imperdiet. Consectetur quod at aperiam corporis totam. Nesciunt minima laborum sapiente totam facere unde est cum quia.</p>
+                    <address>
+                            Phone: 033-033-0660<br>
+                            Email: info@company.com<br>
+                            Address: 880 De Best Studio, Fork Street, San Franciscos
+                    </address>
+                </div>
+                <form>
+                    <input type="text" class="username" placeholder="Your Name">
+                    <input type="email" class="imail" placeholder="Your Email">
+                    <input type="subject" class="subjext" placeholder="Subject">
+                    <textarea name="Message" id="" cols="30" rows="6" placeholder="Message"></textarea>
+                    <button>SEND MESSAGE</button>    
+                </form>
             </div>
         </main>
     </div>
-    <script>
-        var click = 0;
-        function menu() {
-           var dropBlock = document.getElementById("dropMenu");
-           click++;
-           if(click%2!=0){
-                dropBlock.style.display = "block";
-           }
-           else{
-                dropBlock.style.display = "none";  
-           }
-        }
-    </script>
+    <script src="js/script.js"></script>
 </body>
 </html>
-
