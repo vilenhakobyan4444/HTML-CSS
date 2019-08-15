@@ -1,0 +1,61 @@
+.container{
+    display: flex;
+}
+.container2{
+    position: absolute;
+    display: flex;
+}
+.childs{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background: lightskyblue;
+    display:inline-block;
+}
+.rot{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    background: lightcoral;
+    display:inline-block;
+}
+.rot:hover{
+    transform: rotateY(360deg);
+    transition: 2s;
+    opacity: 0;
+}
+.animDiv{
+    margin: 20px;
+    width: 100px;
+    height: 50px;
+    box-shadow: 0 0 10px black;
+    animation-name: kubik;
+    animation-duration: 3s;
+    border-radius: 6px;
+    position: relative;
+    animation-iteration-count: infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: aliceblue;
+    transition:ease-out;
+}
+@keyframes kubik {
+    0%   {background-color: lightcoral;}
+    25%  {background-color: lightyellow;}
+    50%  {background-color: lightblue;}
+    100% {background-color: lightgreen;}
+    0%   {box-shadow:0 0 10px red;}
+    25%  {box-shadow:0 0 10px blue;}
+    50%  {box-shadow:0 0 10px green;}
+    100% {box-shadow:0 0 10px yellow;}
+    0%   {color: orange;}
+    25%  {color: brown;}
+    50%  {color: violet;}
+    100% {color: greenyellow;}
+    25%{transform: rotate(-15deg)}
+    75% {margin-left: 800px;}
+    100%{margin-right: 800px}
+    100%{transform: rotate(-360deg)}
+
+  }
