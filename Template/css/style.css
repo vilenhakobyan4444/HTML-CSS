@@ -10,11 +10,20 @@ ul{margin: 0;}
 header{
     width: 100%;
     height: 97%;
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/slide1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
+    animation-name: slider;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+}
+@keyframes slider{
+    0%{background-image: url(../img/slide1.jpg)}
+    25%{background-image: url(../img/slide2.jpg)}
+    50%{background-image: url(../img/slide3.jpg)}
+    100%{background-image: url(../img/slide1.jpg)}
 }
 header::after{
     width: 100%;
@@ -205,7 +214,7 @@ h3{
 #digitalBlock{
     text-align: center;
     position: absolute;
-    bottom: 50px;
+    bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -453,7 +462,7 @@ p{
 #conWrapper{
     width: 100%;
     height: 100%;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     justify-content: space-between;
     display: flex;
 }
@@ -487,6 +496,7 @@ textarea:focus{border: 1px solid black}
 input:focus{border: 1px solid black}
 
 textarea{
+    max-width: 100%;
     width: 100%;
     color: #444;
     padding: 10px;
@@ -500,6 +510,29 @@ form button{
     padding: 10px 12px;
     margin: 15px 0;
 }
+#topDiv{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+}
+.tapTop{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 1s;
+    float: right;
+    margin-bottom: 100px;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+.tapTop:hover{
+    transform: scale(1.3);
+    box-shadow: 0 0 10px red;
+}
+
+
     
                                 /* *****@MEDIA****** */
                                 /* *****@MEDIA****** */
@@ -540,6 +573,9 @@ form button{
     }
     #globalNav{display: none}
   }
+
+
+
 
 
 
