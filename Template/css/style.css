@@ -1,5 +1,5 @@
 *{box-sizing: border-box;}
-html,body,#wrapper{height: 100%;margin: 0; margin: 0}
+html,body,#wrapper{height: 100%;margin: 0; margin: 0;scroll-behavior: smooth;}
 #wrapper{overflow: scroll;}
 
 *{font-family:'Roboto', sans-serif;}
@@ -9,32 +9,60 @@ html,body,#wrapper{height: 100%;margin: 0; margin: 0}
 ul{margin: 0;}
 header{
     width: 100%;
-    height: 97%;
-    background-image: url(../img/slide1.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     position: relative;
-    animation-name: slider;
-    animation-duration: 9s;
-    animation-iteration-count: infinite;
 }
-@keyframes slider{
-    0%{background-image: url(../img/slide1.jpg)}
-    25%{background-image: url(../img/slide2.jpg)}
-    50%{background-image: url(../img/slide3.jpg)}
-    100%{background-image: url(../img/slide1.jpg)}
-}
-header::after{
+
+                                                /* ****SLIDER**** */
+                                                /* ****SLIDER**** */
+                                                /* ****SLIDER**** */
+
+.mySlides{display: none}
+.mySlides img{
+    vertical-align: middle;
     width: 100%;
     height: 100%;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: black;
-    opacity: 0.5;
+    transition: 2s;
 }
+#slideContainer{
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+.active{
+    background-color: #717171;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+@-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .text {font-size: 11px}
+  }
+
 #headerCentr{
     width: 90%; 
     height: 100%;
@@ -46,6 +74,10 @@ header::after{
     text-align: center;
     color: #444;
     padding: 30px 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 9;
 }
 #iconsBlcok i{
     font-size: 13px;
@@ -64,10 +96,11 @@ header::after{
     display: flex;
     height: auto;
     position: fixed;
-    z-index: 9;
-    /* top: 0; */
+    z-index: 9999;
+    top: 100px;
     left: 50%;
     transform: translateX(-50%);
+    scroll-behavior: smooth;
 }
 #globalNav{
     background: white;
@@ -108,29 +141,16 @@ h2{
 #navbar .fas{
     font-size: 20px;
     cursor: pointer;
-    /* display: none; */
     position: absolute;
-    /* margin: auto; */
     left: 50%;
     top: 50%;
     transform: translate(-50%,-50%);
     color: white;
 }
 #dropMenu{
-    /* display: none; */
     height: 18vw;
     position: relative;
 }
-/* #dropMenu::after{
-    width: 100%;
-    height: 18vw;
-    background: black;
-    opacity: 0.5;
-    position: absolute;
-    left: 0;
-    top: 0;
-    content: " ";
-} */
 #dropMenu ul{
     margin-top:58px;
 }
@@ -214,7 +234,7 @@ h3{
 #digitalBlock{
     text-align: center;
     position: absolute;
-    bottom: 20%;
+    bottom: 35%;
     left: 50%;
     transform: translateX(-50%);
 }
@@ -229,20 +249,6 @@ button{
     color: white;
     font-family: 'Roboto', sans-serif;
     cursor: pointer;
-}
-.dotsBlock{
-    width: 65px;
-    margin: 13px auto;
-    display: flex;
-}
-.dotsBlock div{
-    width: 12px;
-    height: 12px;
-    background: black;
-    border-radius: 50%;
-    display: inline-block;
-    margin-left: 7px;
-
 }
 
                                 /* ***SERVICES*** */
@@ -510,10 +516,11 @@ form button{
     padding: 10px 12px;
     margin: 15px 0;
 }
-#topDiv{
+.topDiv{
     width: 100px;
     height: 100px;
-    border: 1px solid black;
+    float: right;
+    behavior: inherit
 }
 .tapTop{
     width: 70px;
@@ -523,17 +530,14 @@ form button{
     transition: transform 1s;
     float: right;
     margin-bottom: 100px;
-    position: fixed;
-    right: 20px;
-    bottom: 20px;
+    position: absolute;
+    right: 0;
 }
 .tapTop:hover{
     transform: scale(1.3);
     box-shadow: 0 0 10px red;
 }
 
-
-    
                                 /* *****@MEDIA****** */
                                 /* *****@MEDIA****** */
 
@@ -563,6 +567,8 @@ form button{
         margin: auto;
         padding: 15px;
     }
+    #iconsBlcok{position: relative;}
+    #haupt{top:0}
     #conText{width: 100%;margin-bottom: 40px;}
     form{width: 100%;}
     #teamBlocks div{width: 700px;height: 100vw;}
@@ -573,10 +579,3 @@ form button{
     }
     #globalNav{display: none}
   }
-
-
-
-
-
-
-
