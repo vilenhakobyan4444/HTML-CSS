@@ -1,0 +1,387 @@
+/* *{box-sizing: border-box}; */
+*{    font-family: 'Lato', sans-serif;   font-size: 14,4px;}
+a{text-decoration: none;}
+html,body, .container{
+    margin: 0;
+    height: 100%;
+    height: 2000px;
+}
+
+                                /* ***HEADER*** */
+                                /* ***HEADER*** */
+                                /* ***HEADER*** */
+
+.contactTop{
+    background: #2C3E50;
+    display: flex;
+    justify-content: space-around
+}
+.contactTop ul{
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+.contactTop span{color: #16D3B1;}
+.contactTop li{
+    font-size: 14,4px;
+    padding: 9px;
+    list-style-type: none;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    border-right: 1px solid black;
+}
+.contactTop i{ margin: 0 10px;color: white;}
+.topIconsDiv{
+    display: flex;
+    align-items: center;
+}
+.topIconsDiv div:first-child:hover{ background: #3D5A99;}
+.topIconsDiv div:nth-child(2):hover{background: #359BED;}
+.topIconsDiv div:nth-child(3):hover{background: #3B5876;}
+.topIconsDiv div:nth-child(4):hover{background: #CC1D24}
+
+.topIconsDiv i{
+    margin:0 10px;
+    color: white;
+}
+.topIconsDiv div{
+    padding: 0.8vw;
+    border-right: 1px solid;
+    transition: background .5s;
+    cursor: pointer;
+}
+.topIconsDiv div:first-child{border-left: 1px solid}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav a{
+    padding: 3vw 1.8vw;
+    display: inline-block;
+    text-decoration: none;
+    transition: color .5s;
+    color:  #2C3E50;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+nav a:hover{color: #16D3B1;}   
+.logoDiv{
+    display: flex;
+    align-items: center;
+}
+.headerSlider{
+    background-image: url(../img/slider-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sliderContent{
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+.sliderContent h1{ margin: 0;font-size: 40px;}
+.sliderContent p{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.sliderContent button{
+    padding: 12px 18px;
+    border: 2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    margin: 20px 13px;
+    cursor: pointer;
+}
+.sliderContent button:hover{
+    background: #16D3B1;
+    border-color: #16D3B1;
+    transition: .5s;
+}
+.prew,.next{
+    width: 60px;
+    height: 60px;
+    background: #16D3B1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+    cursor: pointer;
+}
+.prew:hover{opacity:1;}
+.next:hover{opacity: 1;}
+.prew{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%)
+}
+.next{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.serchDiv{
+    width: 100%;
+    height: 80px;
+    background: #2C3E50;
+    border-top: 1px solid rgb(63, 87, 112)
+}
+.serchBar{
+    width: 80%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+.borderDiv{
+    width: 14%;
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    background-image: url(../img/border.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right;
+}
+.borderDiv span,form span{
+    margin-top: 15px;
+    font-size: 16px;
+    color: #9FB0C0;
+}
+form span{
+    font-size: 19px;
+    margin: 0 10px;
+}
+form{width: 86%;}
+form input{
+    width: 27%;
+    outline: none;
+    border:none;
+    padding: 8px 16px;
+}
+.borderDiv h2{
+    margin: 0;
+    color: #FFF;
+    font-weight: 700;
+    font-size: 1.4em
+}
+form button{
+    padding: 10px 16px;
+    outline: none;
+    border: none;
+    background: #16D3B1;
+    color: #fff;
+    font-size: 14px;
+    margin-left: 16px;
+    cursor: pointer;
+    transition: .5s;
+}
+form button:hover{
+    background: #fff;
+    color: #16D3B1;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+                                /* ****DATEPICKER****
+                                ****DATEPICKER****
+                                ****DATEPICKER**** */
+
+.ui-datepicker table{
+    background: rgba(44, 62, 80, 0.7);
+    margin: 0!important;
+}
+.ui-datepicker-header{
+    background: rgba(29, 210, 175, 0.54);
+    margin: 0;
+}
+.ui-datepicker{ padding: 0;border:none;}
+.ui-widget-header{ border: none;}
+.ui-state-default,.ui-state-default, .ui-widget-content{
+    border: none !important;
+    background:none !important;
+    font-weight: normal;
+    color: white !important;
+    text-align: center !important;
+}
+.ui-datepicker .ui-datepicker-title{
+    color: white;
+}
+
+
+
+                            /* ***SECTION*** */
+                            /* ***SECTION*** */
+
+.sectionContent,.holidaysTypeContent,.hapyClientsContent{
+    margin: auto;
+    text-align: center;
+    padding: 3vw;
+    color: #2C3E50;
+}  
+.sliderSection{
+    border: solid;
+    padding: 0 0 6em;
+    width: 3326px;
+    overflow: hidden;
+    position: relative;
+    animation: karusel 5s infinite;
+    transition: left ease-in;
+    animation-duration: 10s;
+    animation-delay: 5s;
+}
+@keyframes karusel{
+    0%{left: 0px;}
+    25%{left: 0px;}
+    50%{left: -100%;}
+    75%{left: -165%;}
+    100%{left: 0;}
+    /* 100% {top: 100px;} */
+}
+
+.imgBlock{
+    width: 241px;
+    display: inline-block;
+    background: #EEEEEE;
+    border: 5px solid #EEEEEE;
+    border-radius: 5px;
+    transition: .5s;
+    margin: 11px;
+}  
+.imgBlock:hover{
+    transform: scale(1.05);
+    border-color: #16D3B1;
+    background: #2C3E50;
+}
+.imgBlock:hover .imgBlockText a{
+    color: #EEEEEE;
+}
+.imgBlock img{
+    width: 100%;
+    height: 204px;
+}                        
+.imgBlockText{
+    padding: 8px;
+    color: #747474;
+}
+.imgBlockText a{color: #747474;}
+
+.holidaysTypeContent{color: white;padding-top:5vw;}
+.holidaysType{
+    background-image: url(../img/type-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+.holidaysType span{
+    width: 126px;
+	height: 126px;
+	display: inline-block;
+}
+.holidaysType a{
+    display: block;
+	text-align: center;
+	color: #9FB0C0;
+	font-size: 1.2em;
+	padding: 0.3em 0;
+	transition:0.5s all;
+}
+.holidaysType a:hover{
+    color:#1DD2AF;
+}
+.icons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 0 9vw 0;
+}
+.icon1{
+	background: url(../img/big-icons.png) no-repeat 0px -126px;
+}
+.icon1:hover{
+	background: url(../img/big-icons.png) no-repeat 0px 2.2px;
+}
+.icon2{
+	background: url(../img/big-icons.png) no-repeat -155px -126px;
+}
+.icon2:hover{
+	background: url(../img/big-icons.png) no-repeat -155px 2.2px;
+}
+.icon3{
+	background: url(../img/big-icons.png) no-repeat -309px -126px;
+}
+.icon3:hover{
+	background: url(../img/big-icons.png) no-repeat -309px 2.2px;
+}
+.icon4{
+	background: url(../img/big-icons.png) no-repeat -464px -126px;
+}
+.icon4:hover{
+	background: url(../img/big-icons.png) no-repeat -464px 2.2px;
+}
+.icon5{
+	background: url(../img/big-icons.png) no-repeat -620px -126px;
+}
+.icon5:hover{
+	background: url(../img/big-icons.png) no-repeat -620px 2.2px;
+}
+.icon6{
+	background: url(../img/big-icons.png) no-repeat -775px -126px;
+}
+.icon6:hover{
+	background: url(../img/big-icons.png) no-repeat -775px 2.2px;
+}
+ 
+
+
+                            /* ***HAPPYCLIENTS*** */
+                            /* ***HAPPYCLIENTS*** */
+                            /* ***HAPPYCLIENTS*** */
+
+
+.sliderClients{
+    display: flex;
+    justify-content: space-around;
+}
+.sliderClients>div{
+    width: 21%;
+    background: #eee;
+    padding: 16px;
+    border-top: 5px solid #1DD2AF;
+    border-left: 1px solid #DDD;
+    border-right: 1px solid #DDD;
+    border-bottom: 1px solid #DDD;
+    display: inline-block;
+    margin: 10px;
+
+}
+.sliderClients>div p{
+    color: #717171;
+    font-size: 1.3vw;
+    margin: 0 0 10px 0;
+}
+.sliderClients>div a{
+    color: #1DD2AF;
+    font-size: 1.5vw;
+}
+.sliderClients>div span{
+    color: #999;
+    font-size:1vw; 
+    
+}
