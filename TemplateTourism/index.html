@@ -1,1 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+        $("document").ready(function(){
+            $("#datepicker").datepicker({
+                firstDay:1
+            });
+            $(".navbarIconDiv").click(function(){
+                $(".dropMenu").slideToggle();
+            })
+        }) 
+     </script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="contactTop">
+                <ul>
+                    <li><i class="fa fa-user"></i>Agent Login</li>
+                    <li><i class="fa fa-user"></i>Agent Login</li>
+                    <li>Not a Member?<span> Register</span></li>
+                    <li>Call Us Now : 815-123-4567</li>
+                </ul>
+                <div class="topIconsDiv">
+                    <div><i class="fa fa-facebook-f"></i></div>
+                    <div><i class="fa fa-twitter"></i></div>
+                    <div><i class="fa fa-tumblr"></i></div>
+                    <div><i class="fa fa-pinterest"></i></div>
+                </div>
+            </div>
+            <div class="navbar">
+                <div class="logoDiv">
+                    <img src="img/logo.png" alt="img">
+                </div>
+                <nav>
+                    <a href="">Home</a>
+                    <a href="">Destinations</a>
+                    <a href="">Criuses</a>
+                    <a href="">Specials</a>
+                    <a href="">Holidays</a>
+                    <a href="">Blog</a>
+                    <img src="img/search-icon.png" alt="">
+                </nav>
+                <div class="navbarIconDiv" ><i class="fa fa-bars"></i></div>
+            </div>
+            <div class="dropMenu">
+                <a href="">Home</a>
+                <a href="">Destinations</a>
+                <a href="">Criuses</a>
+                <a href="">Specials</a>
+                <a href="">Holidays</a>
+                <a href="">Blog</a>
+            </div>
+            <div class="headerSlider">
+                <div class="sliderContent">
+                    <h1>TO TRAVEL IS TO LIVE</h1>
+                    <p>You Don't Need Magic to Disappear. All you need is a destination.</p>
+                    <button>SHOW ON THE MAP</button>
+                    <button>MORE INFO</button>
+                    <div class="prew"><i class="fa fa-chevron-left"></i></div>
+                    <div class="next"><i class="fa fa-chevron-right"></i></div>
+                </div>
+            </div>
+            <div class="serchDiv">
+                <div class="serchBar">
+                    <div class="borderDiv">
+                        <span>FIND YOUR</span>
+                        <h2>HOLIDAYS</h2>
+                    </div>
+                    <form>
+                        <span>Where</span>
+                        <input type="text" placeholder="Distination">
+                        <span>When</span>
+                        <input id="datepicker" type="text" placeholder="Select date">
+                        <button>Serch</button>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="sectionContent">
+                <h2>SPECIAL OFFERS</h2>
+                <p>Best 2014 packages where people love to stay!</p>
+            </div>
+            <div style="width: 100%;overflow: hidden;">
+                <div class="sliderSection">
+                    <div class="imgBlock">
+                        <img src="img/p1.jpg" alt="">
+                        <div class="imgBlockText">
+                            <a href="">Hong Kong & Macau</a><br>
+                            <span>Bonus Extras!</span>
+                        </div>
+                    </div>
+                    <div class="imgBlock">
+                        <img src="img/p2.jpg" alt="">
+                        <div class="imgBlockText">
+                            <a href="">Hong Kong & Macau</a><br>
+                            <span>Bonus Extras!</span>
+                        </div>
+                    </div>
+                    <div class="imgBlock">
+                        <img src="img/p3.jpg" alt="">
+                        <div class="imgBlockText">
+                            <a href="">Hong Kong & Macau</a><br>
+                            <span>Bonus Extras!</span>
+                        </div>
+                    </div>
+                    <div class="imgBlock">
+                        <img src="img/p4.jpg" alt="">
+                        <div class="imgBlockText">
+                            <a href="">Hong Kong & Macau</a><br>
+                            <span>Bonus Extras!</span>
+                        </div>
+                    </div>
+                    <div class="imgBlock">
+                        <img src="img/p5.jpg" alt="">
+                        <div class="imgBlockText">
+                            <a href="">Hong Kong & Macau</a><br>
+                            <span>Bonus Extras!</span>
+                        </div>
+                    </div>
+                    <div class="imgBlock">
+                        <img src="img/p6.jpg" alt="">
+                        <div class="imgBlockText">
+                            <a href="">Hong Kong & Macau</a><br>
+                            <span>Bonus Extras!</span>
+                        </div>
+                    </div>
+                    <div class="imgBlock">
+                        <img src="img/p1.jpg" alt="">
+                        <div class="imgBlockText">
+                            <a href="">Hong Kong & Macau</a><br>
+                            <span>Bonus Extras!</span>
+                        </div>
+                    </div>
+                    <div class="imgBlock">
+                        <img src="img/p2.jpg" alt="">
+                        <div class="imgBlockText">
+                            <a href="">Hong Kong & Macau</a><br>
+                            <span>Bonus Extras!</span>
+                        </div>
+                    </div>
+                    <div class="imgBlock">
+                        <img src="img/p3.jpg" alt="">
+                        <div class="imgBlockText">
+                            <a href="">Hong Kong & Macau</a><br>
+                            <span>Bonus Extras!</span>
+                        </div>
+                    </div>
+                    <div class="imgBlock">
+                        <img src="img/p4.jpg" alt="">
+                        <div class="imgBlockText">
+                            <a href="">Hong Kong & Macau</a><br>
+                            <span>Bonus Extras!</span>
+                        </div>
+                    </div>
+                    <div class="imgBlock">
+                        <img src="img/p5.jpg" alt="">
+                        <div class="imgBlockText">
+                            <a href="">Hong Kong & Macau</a><br>
+                            <span>Bonus Extras!</span>
+                        </div>
+                    </div>
+                    <div class="imgBlock">
+                        <img src="img/p6.jpg" alt="">
+                        <div class="imgBlockText">
+                            <a href="">Hong Kong & Macau</a><br>
+                            <span>Bonus Extras!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="holidaysType">
+            <div class="holidaysTypeContent">
+                <h2>SPECIAL OFFERS</h2>
+                <p>Best 2014 packages where people love to stay!</p>
+            </div>
+            <div class="icons">
+                <div class="holiday-type-grid" onclick="location.href='#';">
+                    <span class="icon1"> </span>
+                    <a href="#">Cruise</a>
+                </div>
+                <div class="holiday-type-grid" onclick="location.href='#';">
+                    <span class="icon2"> </span>
+                    <a href="#">City Breaks</a>
+                </div>
+                <div class="holiday-type-grid" onclick="location.href='#';">
+                    <span class="icon3"> </span>
+                    <a href="#">Honeymoon</a>
+                </div>
+                <div class="holiday-type-grid" onclick="location.href='#';">
+                    <span class="icon4"> </span>
+                    <a href="#">Adventure</a>
+                </div>
+                <div class="holiday-type-grid" onclick="location.href='#';">
+                    <span class="icon5"> </span>
+                    <a href="#">Safari</a>
+                </div>
+                <div class="holiday-type-grid" onclick="location.href='#';">
+                    <span class="icon6"> </span>
+                    <a href="#">Beach</a>
+                </div>
+            </div>
+        </div>
+        <div class="hapyClients">
+            <div class="hapyClientsContent">
+                <h2>HAPPY CLIENTS</h2>
+                <p>what customer say about us and why love our services!</p>
+            </div>
+            <div class="sliderClients">
+                <div>
+                    <p>Lorem Ipsum is simply dummy text of the 
+                        printing and typeset industry. 
+                        Lorem Ipsum has been the industry's
+                        standard dummy text ever hen an with
+                        new version look.
+                    </p>
+                    <a>Client Name</a><br>
+                    <span>United States</span>   
+                </div>
+                <div>
+                    <p>Lorem Ipsum is simply dummy text of the 
+                        printing and typeset industry. 
+                        Lorem Ipsum has been the industry's
+                        standard dummy text ever hen an with
+                        new version look.
+                    </p>
+                    <a>Client Name</a><br>
+                    <span>United States</span>   
+                </div>
+                <div>
+                    <p>Lorem Ipsum is simply dummy text of the 
+                        printing and typeset industry. 
+                        Lorem Ipsum has been the industry's
+                        standard dummy text ever hen an with
+                        new version look.
+                    </p>
+                    <a>Client Name</a><br>
+                    <span>United States</span>   
+                </div>
+                <div>
+                    <p>Lorem Ipsum is simply dummy text of the 
+                        printing and typeset industry. 
+                        Lorem Ipsum has been the industry's
+                        standard dummy text ever hen an with
+                        new version look.
+                    </p>
+                    <a>Client Name</a><br>
+                    <span>United States</span>   
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div>
+                <h3>News letter</h3>
+                <p>Duis autem vel eum iriure dolor in hendrerit in 
+                    vulputate velit esse molestie consequat, vel illum dolore.
+                </p>
+                <input type="text" placeholder="Subscribes">
+                <button>GO</button>
+            </div>
+            <div>
+                <h3>Latest News</h3>
+                <div style="display: inline-flex">
+                    <div >
+                        <img src="img/f01.jpg" alt="">
+                    </div>
+                    <div style="margin-left: 10px">
+                        <a href="">Postformat Gallery: Multiple images</a><br>
+                        <span>December 12, 2012 - 9:11 pm</span>
+                    </div>
 
+                </div>
+                <div style="display: inline-flex">
+                    <div>
+                        <img src="img/f01.jpg" alt="">
+                    </div>
+                    <div style="margin-left: 10px">
+                        <a href="">Postformat Gallery: Multiple images</a><br>
+                        <span>December 12, 2012 - 9:11 pm</span>
+                    </div>
+
+                </div>
+            </div>
+            <div>
+                <h3>Tags</h3>
+                <a href="">Agent Login</a>
+                <a href="">Customer Login</a>
+                <a href="">Not a Member</a>
+                <a href="">Contact</a>
+                <a href="">New Horizons</a>
+                <a href="">Lanscape</a>
+                <a href="">Tags</a>
+                <a href="">Nice</a>
+                <a href="">Some</a>
+                <a href="">Portrait</a>
+            </div>
+            <div>
+                <h3>Adress</h3>
+                <address>
+                        DieSachbearbeiter Schonhauser Allee 167c,
+                        10435 Berlin Germany E-mail:moin@blindtex
+                        tgenerator.de
+                        <div class="topIconsDiv" style="margin-top: 21px;">
+                                <div><i class="fa fa-facebook-f"></i></div>
+                                <div><i class="fa fa-twitter"></i></div>
+                                <div><i class="fa fa-tumblr"></i></div>
+                                <div><i class="fa fa-pinterest"></i></div>
+                        </div>
+                </address>
+                
+            </div>
+        </footer>
+        <div class="footerBottom">
+            <div class="footerBottomContant" >
+                <ul style="margin: 0; padding: 0;">
+                    <a>Home ::</a>
+                    <a>Destinations ::</a> 
+                    <a>Cruises ::</a>
+                    <a>Specils ::</a>
+                    <a>Holidays ::</a>
+                    <a>Blog ::</a>
+                    <a>Contact Us ::</a>
+                </ul> 
+                <p>Template by <span>W3layouts</span></p>
+            </div>
+            <div class="topDiv">
+                <a href="#"><img src="img/to-top.png" alt=""></a>
+            </div>
+
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
