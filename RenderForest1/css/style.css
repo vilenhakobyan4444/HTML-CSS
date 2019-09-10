@@ -1,0 +1,755 @@
+html{ width: 100%;height: 100%;}
+body{width: 100%;height: 100%; margin: 0}
+.container{width: 100%;height: 100%;}
+p{margin: 0};
+.navBar{z-index: 9;}
+.navBar{
+   padding: 12px 22px;
+   box-shadow: 0px 6px 12px #0052E01A;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   position: relative;
+}
+.logoBlock{
+   height:46px;
+   display: flex;
+}
+.navBar ul {
+   display: flex;
+   align-items: center;
+   margin: 0;
+}
+.dropIcon{display: none;cursor: pointer;}
+.navBar ul li{
+   list-style-type: none;
+   margin: 10px;
+   margin: 0 3.3vw 0 0;
+   color: #363F5A;
+   font-family: 'Montserrat', sans-serif;
+}
+.navBar ul li:nth-child(8){margin-right: 1.5vw;}
+.navBar button{
+   width: 113px;
+   height: 40px;
+   background: transparent linear-gradient(180deg, #5690FF 0%, #387DFF 100%) 0% 0% no-repeat padding-box;
+   box-shadow: 0px 3px 9px #387DFF80;
+   border-radius: 20px;
+   border: none;
+   outline: none;
+   text-align: center;
+   font-family: 'Montserrat', sans-serif;
+   letter-spacing: 0;
+   color: #FFFFFF;
+   font-size: 14px;
+   cursor: pointer;
+}
+.headerBlock{
+   display: flex;
+   justify-content: center;
+   padding-top: 4.4vw;
+   background: transparent linear-gradient(180deg, #F6FAFF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+}
+.headerBlock h2{
+   font: Bold 35px/43px Montserrat;
+   letter-spacing: 0;
+   color: #252E48;
+   margin: 0;
+}
+.headerBlock h1{
+   font: Bold 70px/86px Montserrat;
+   color: #387DFF;
+   margin: 10px;
+}
+.headerBlock h4{
+   font: Bold 18px/22px Montserrat;
+   color: #545F7E;
+   margin: 0;
+}
+.headerHeading{
+   text-align: center;
+}
+                                                       /* ***SECTION*** */
+                                                       /* ***SECTION*** */
+                                                       /* ***SECTION*** */
+.imgSection{
+   background-image: url(../img/illustration\ 1.svg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 33.1vw;
+}
+.vidSection{
+   background-image: url(../img/bg.svg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   height: 46.6vw;
+   transform: translateY(-2px);
+}
+.vidSectionHeading{
+   width: 52.9%;
+   margin: auto;
+}
+.vidSectionHeading h2{
+   text-align: center;
+   font: Bold 32px/38px Montserrat;
+   color: #FFFFFF;
+   margin: 0 0 4vw 0;
+}
+.iframe{
+   width: 57.321vw;
+   height: 30.600vw;
+   margin: auto;
+   background-image: url('../img/Screen Shot 2019-05-24 at 17.34.45-3@2x.png');
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   display: flex;
+   justify-content: center;
+}
+.laptopBlock{
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.laptopBlockHeading h2{
+   text-align: left;
+   font: Bold 35px/43px Montserrat;
+   color: #387DFF;
+   margin: 0;
+}
+.laptopBlockHeading{
+   width: 38.2%;
+}
+.laptopBlockHeading p{
+   font: Medium  Montserrat;
+   color: #363F5A;
+}
+.hrGreen{
+   width: 50px;
+   height: 6px;
+   background: #4FDC6F 0% 0% no-repeat padding-box;
+   margin: 30px auto;
+
+}
+.laptopBlockImg{
+   width: 451px;
+   height: 410px;
+   background:url('../img/notebook\ illustration.png ');
+   background-size: cover;
+}
+                                   /* ***ANIMBLOCK*** */
+                                   /* ***ANIMBLOCK*** */
+                                   /* ***ANIMBLOCK*** */
+.anim{
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #F6FAFF 16%, #F6FAFF 89%, #F6FAFF 100%) 0% 0% no-repeat padding-box;
+}
+.animHeading{
+   width: 50%;
+   margin: auto;
+}
+.animHeading h2{
+   text-align: center;
+   font: Bold 32px/45px Montserrat;
+   letter-spacing: 0;
+   color: #545F7E;
+}
+.hrRed{
+   width: 50px;
+   height: 6px;
+   background: #F37C6A  0% 0% no-repeat padding-box;
+   margin: auto;
+   margin-top: 2.2vw;
+   margin-bottom: 2.2vw;
+}
+.animLine1{
+    width: 105vw;
+    height: 17.1vw;
+    background: url('../img/1.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    position: relative;
+    left: -46px;
+}
+.animLine2{
+    width: 132.6vw;
+    height: 17.2vw;
+    background: url('../img/2.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    position: relative;
+    left: -222px;
+}
+.animLine3{
+    width: 105vw;
+    height: 17.1vw;
+    background: url('../img/3.png') 0% 0% no-repeat padding-box;
+    background-size: cover;
+    position: relative;
+    left: -46px;
+}
+.animBottomHeading{
+    margin: auto;
+    width: 53.3%;
+}
+.animBottomHeading h2{
+    text-align: center;
+    font: Bold 32px/40px Montserrat;
+    letter-spacing: 0;
+    color: #387DFF;
+    margin: 45px 0 0 0;
+}
+.animBottomP{
+    width: 59.8%;
+    text-align: center;
+    font: Bold 18px/24px Montserrat;
+    color: #545F7E;
+    margin:auto;
+}
+.hrBlue{
+    width: 50px;
+    height: 6px;
+    background: #4FCEFF;
+    margin: auto;
+    margin: 30px auto;
+}
+.coloredIconsBlock{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 73%;
+    align-items: center;
+    margin:auto;
+    padding: 30px 0 115px 0;
+}
+.colorIB{
+   width: 107px;
+   height: 107px;
+   box-shadow: 0px 3px 15px #7169DD33;
+   border-radius: 100px;
+}
+.coloredIconsBlock div{
+   margin: auto;
+   margin: 10px;
+}
+.coloredIconsBlock div div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.cirkleIcons{
+    width: 60px;
+    height: 50px;
+}
+.coloredIconsBlock p{
+    width: 114px;
+    height: 22px;
+    text-align: center;
+    font: Bold 18px/27px Montserrat;
+    /* letter-spacing: -0.04px; */
+    color: #545F7E;
+}
+
+                                                                    /*****MASHIN lEARNING**** 
+                                                                    ****MASHIN lEARNING**** 
+                                                                    ****MASHIN lEARNING**** */
+
+
+.mashinLern{
+   padding: 10.981vw 0 7.906vw 0;
+}
+.firstML{
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 12.738vw;
+}
+.imgML{
+    width: 535px;
+    height: 256px;
+    background-size: cover !important;
+    background: transparent url('../img/machine learning illsutration.png') 0% 0% no-repeat padding-box;
+}
+.imgML1{
+   width: 441px;
+   height: 327px;
+   background: transparent url('../img/website illustration.svg') 0% 0% no-repeat padding-box;
+   background-size: cover !important;
+}           
+.headingMl{
+   width: 36.1%;
+}
+.headingMl h2{
+   font: Bold 32px/40px Montserrat;
+   color: #766DE8;
+   margin: 0;
+}
+.headingMl p{
+   text-align: left;
+   font: 16px/24px Montserrat;
+   color: #363F5A;
+   margin-bottom: 30px;
+}
+.headingMl button,.buttonML{
+   border:none;
+   outline: none;
+   padding: 19px 34px;
+   background: transparent linear-gradient(180deg, #FFA330 0%, #F07379 100%) 0% 0% no-repeat padding-box;
+   box-shadow: 0px 3px 9px #F37C6C80;
+   border-radius: 30px;
+   font: 18px/22px Montserrat;
+   color: white;
+   cursor: pointer;
+}
+.buttonML{
+   display: none;
+   margin: 30px auto;
+}
+.secondML{
+   display: flex;
+   justify-content: space-around;
+}
+.secondML h2{
+   color: #387DFF;   
+}
+
+
+                                    /* ***SoftwareCompanies*** */
+                                    /* ***SoftwareCompanies*** */
+                                    /* ***SoftwareCompanies*** */
+
+
+.blueBG{
+   background: #387DFF 0% 0% no-repeat padding-box;
+   position: relative;
+   padding-top: 100px;
+}              
+.softCompHeading{
+   width: 54.905vw;
+   margin: auto;
+}                      
+.softCompHeading h2{
+   margin-top: 0;
+   text-align: center;
+   font: Bold 35px/45px Montserrat;
+   color: #FFFFFF;
+}
+.softCompHeading p{
+   width: 40.410vw;
+   text-align: center;
+   font: Bold 16px/24px Montserrat;
+   color: #FFFFFF;
+   margin: auto;
+}
+.BGImg{
+   width: 239px;
+   height: 227px;
+   background: transparent url('../img/illustration.png') 0% 0% no-repeat padding-box;
+   top: 27%;
+    left: 7%;
+    position: absolute;
+}
+.softCompImg{
+   height: 27.160vw;
+   background: transparent url('../img/Union 14.png') 0% 0% no-repeat padding-box;
+   background-size: cover;
+   display: flex;
+   justify-content: center;
+   transform: translate(0, -1px);
+}
+.softButt{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   margin-top: 4.758vw;
+   cursor: pointer;
+}
+.softButt div{
+   width: 240px;
+   height: 90px;
+   background: #FFFFFF 0% 0% no-repeat padding-box;
+   box-shadow: 0px 6px 12px #0052E01A;
+   border-radius: 10px;
+   margin: 20px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+.doOurBest{
+   margin-top: 12px;
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+}
+.doOurBestIMG{
+   width: 28.917vw;
+   height: 38.214vw;
+   min-width: 305px;
+   min-height: 404px;
+   position: relative;
+   background: transparent url('../img/molbert.png') 0% 0% no-repeat padding-box;
+   background-size: contain;
+}
+.doOurBestHeading {
+   width: 35.505vw;
+   margin-bottom: 11%;
+}
+.doOurBestHeading h2{
+   text-align: left;
+   font: Bold 32px/40px Montserrat;
+   letter-spacing: 0;
+   color: #387DFF;
+   opacity: 1;
+   margin: 0;
+}
+.doOurBestHeading p{
+   text-align: left;
+   font: Bold 16px/24px Montserrat;
+   letter-spacing: 0;
+   color: #363F5A;
+   opacity: 1;
+}
+.miniHeading{
+   width: 57.3%;
+   min-width: 198px;
+   position: absolute;
+   top: 20%;
+   left: 50%;
+   transform: translateX(-50%);
+   text-align: center;
+   font: 14px/20px Montserrat;
+   color: #363F5A;
+}
+.miniHeading a{color: #387DFF}
+.miniHeading button{
+   width: 92px;
+   height: 31px;
+   border: none;
+   outline: none;
+   color: #FFFFFF;
+   font: 13px/30px Montserrat;
+   background: transparent linear-gradient(180deg, #E79E00 0%, #F37C6A 100%) 0% 0% no-repeat padding-box;
+   box-shadow: 0px 3px 6px #F37C6A4D;
+   border-radius: 20px;
+   cursor: pointer;
+}
+.bgSoft{
+   background: transparent linear-gradient(180deg, #F5FAFE 0%, #F5FAFE08 100%) 0% 0% no-repeat padding-box;
+}
+
+
+                                 /* ***BENEFITS?*** */
+                                 /* ***BENEFITS?*** */
+                                 /* ***BENEFITS?*** */
+
+
+.benefitsHeading{
+   width: 53.5%;
+   margin: auto;
+   text-align: center;
+}       
+.benefitsHeading h2{
+   text-align: center;
+   font: Bold 32px/39px Montserrat;
+   color: #766DE8;
+}     
+.benefitsHeading p{
+   text-align: center;
+   font: Bold 16px/28px Montserrat;
+   color: #545F7E;
+}  
+.squirrel{
+   width: 73.133vw;
+   height: 36.457vw;
+   background: transparent url(../img/rendy.png) 0% 0% no-repeat padding-box;
+   margin: auto;
+   background-size: cover;
+}                   
+
+
+                                    /* ***YOUTUBE*** */
+                                    /* ***YOUTUBE*** */
+                                    /* ***YOUTUBE*** */
+
+                        
+.youtube{
+   position: relative;
+   background: transparent linear-gradient(180deg, #F5FAFE00 0%, #F5FAFE 14%, #EEF5FF 100%) 0% 0% no-repeat padding-box;
+}
+.youHeading{
+   padding-top: 13.6%;
+   margin: auto;
+   width: 22.8%;
+}
+.youHeading h2{
+   margin: 0;
+   text-align: center;
+   font: Bold 32px/39px Montserrat;
+   color: #387DFF;
+}
+.youDots{
+   width: 231px;
+   height: 191px;
+   position: absolute;
+   right: 0;
+   top: 0;
+   background: transparent url('../img/illustration.png') 0% 0% no-repeat padding-box;
+}
+.videoBlock{
+   display: flex;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+.videoBlock div{
+   width: 27.7%;
+   height: 14.788vw;
+   min-width: 304px;
+   min-height: 162px;
+   background: transparent url('../img/Screen Shot 2019-05-24 at 17.34.45.png');
+   background-size: cover;
+   border-radius: 15px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+}
+.videoBlock img{
+   width: 4.392vw;
+   height: 3.075vw;
+   position: absolute;
+   left: 50%;
+   top: 55%;
+   transform: translate(-55%, -50%)
+}
+.userHeading{
+   margin: auto;
+   width: 32.2%;
+}
+.userHeading h2{
+   text-align: center;
+   font: Bold 32px/39px Montserrat;
+   color: #387DFF;
+}
+.hrOrange{
+   width: 50px;
+   height: 6px;
+   background: #E79E00 0% 0% no-repeat padding-box;
+   margin: 30px 0;
+   margin: 30px auto;
+}
+.userComent{
+   display: flex;
+   width: 53.5%;
+   margin: auto;
+   background: white;
+   justify-content: space-evenly;
+   padding: 60px 0 50px 0;
+   box-shadow: 0px 6px 12px #0052E01A;
+   border-radius: 10px;
+   position: relative;
+}
+.userProfile{ width: 22.5%;}
+.userImg{
+   width: 10.615vw;
+   height: 10.615vw;
+   background-image: url(../img/es.jpg);
+   border-radius: 50%;
+   background-size: cover;
+   background-position: center;
+   margin:auto;  
+}
+.userName{text-align: center;}
+.coment{ width: 52%;}
+.userName h4{
+   margin-top:2.489vw;
+   margin-bottom: 0; 
+   font: Bold 18px/22px Montserrat;
+   color: #3379FF;
+}
+.userName span{
+   font:  14px/18px Montserrat;
+   color: #545F7E;
+}
+.coment p {
+   font:  16px/22px Montserrat;
+   color: #363F5A;
+}
+.userIcon{
+   width: 10.322vw;
+   height: 8.419vw;
+   background: transparent url('../img/quotes.png') 0% 0% no-repeat padding-box;
+   background-size: cover;
+   position: absolute;
+   bottom: 0;
+   right: 0;
+   transform: translate(56%, 50%);
+}
+.slideDots{
+   width: max-content;
+   margin: auto;
+   display: flex;
+   padding: 3.880vw 0 6.076vw 0;
+}
+.slideDots div{
+   width: 12px;
+   height: 12px;
+   background:  #CFE0FF;
+   border-radius: 50%;
+   margin: 10px;
+   cursor: pointer;
+}
+.slideDots div:first-child{background: #3379FF;}
+
+
+
+                                          /* ***FOOTER*** */
+                                          /* ***FOOTER*** */
+                                          /* ***FOOTER*** */
+
+footer{
+   background: #387DFF;
+   padding: 5.124vw 0 5.124vw 0;    
+}
+.footerHeading{
+   width: 50%;
+   margin: auto;
+   text-align: center;
+}     
+.footerHeading h3{
+   font: Bold 20px/24px Montserrat;
+   color: #FFFFFF;
+   margin-top: 0;
+}                                 
+.footerHeading p{
+   font:  14px/18px Montserrat;
+   color: #FFFFFF;
+}
+.footerInp{
+   width: max-content;
+   margin: auto;
+   position: relative;
+}
+.footerInp input:first-child{
+   width: 14.641vw;
+   border-radius: 30px;
+   border: none;
+   padding: 11px 19px;
+   outline: none;
+   margin-right: 1.464vw;
+}
+.footerInp input:nth-child(2){
+   width: 27.818vw;
+   border-radius: 30px;
+   border: none;
+   outline: none;
+   padding: 11px 19px;
+
+}
+.footerInp button{
+   border:none;
+   outline: none;
+   padding: 11px 23px;
+   background: transparent linear-gradient(180deg, #FFA330 0%, #F07379 100%) 0% 0% no-repeat padding-box;
+   box-shadow: 0px 3px 9px #F37C6C80;
+   border-radius: 30px;
+   font:  14px/18px Montserrat;
+   color: white;
+   position: absolute;
+   right: -1px;
+   cursor: pointer;
+}
+footer a{
+   text-align: left;
+   font:  14px/30px  'Montserrat', sans-serif;
+   color: #FFFFFF;
+   display: block;
+}
+.footerContent{
+   display: flex;
+   margin: auto;
+   width: 80%;
+   justify-content: space-evenly;
+   padding:4.685vw 3.075vw; 
+}
+.footerContent div:last-child{display: none;}
+.footerContent div:last-child a{text-align: center;}
+
+.footerBottom{
+   margin: auto;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+}
+.footerBottom span{
+   font: Medium 14px/18px Montserrat;
+   color: white;
+}
+.footerBotLogo{
+   width: 175px;
+   height: 40px;
+   background: transparent url('../img/renderforest-logo copy.svg') 0% 0% no-repeat padding-box;
+}
+.footerBotIcon i{
+   font-size: 18px;
+   color: white;
+   padding: 0.952vw;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+      h2{font: Bold 26px/32px Montserrat !important;}
+      .hrBlue,.hrGreen,.hrOrange,.hrRed{
+         margin: 20px auto;
+      }
+      nav{display: none;}
+      .laptopBlock{
+         flex-wrap: wrap;
+         justify-content: center;
+         text-align: center;
+      }
+      .laptopBlockHeading h2{text-align: center;}
+      .userComent p{font: 14px/20px Montserrat;}
+      .dropIcon{display: block;}
+}
+
+@media screen and (max-width: 768px) {
+   .footerContent{width: auto;}
+   .firstML{flex-direction: column-reverse;align-items: center;margin-bottom:4.392vw;}
+   .headingMl{text-align: center; width: 90%;}
+   .headingMl p{text-align: center}
+   .headingMl button{display: none;}
+   .buttonML{display: block;}
+   .youHeading{width: auto;}
+   .commentBlock{display: none;}
+   .footerContent div{display: none;}
+   .footerContent div:last-child{display: block;}
+   .footerInp{ display: flex;flex-direction: column;}
+   .secondML{flex-wrap: wrap;}
+   .footerInp input,.footerInp button{width: 80% !important; margin: 20px auto 0 !important;}
+   .footerInp button{position: unset;width: 318px}
+   .footerBottom{flex-direction: column;}
+   .dotsImg{display: none;}
+   footer button *{margin-bottom:10px;}
+   .footerBottom span{margin: 10px 0;}
+   .doOurBest{flex-direction: column-reverse;}
+   .imgSection{height: 39.4vw;}
+   .vidSection{height: 55.6vw;}
+   .videoBlock{padding-bottom: 60px}
+   .footerInp{width: unset}
+   .doOurBestHeading h2, .doOurBestHeading p{text-align: center;}
+   .animBottomHeading,.animBottomP,.softCompHeading,.softCompHeading p,.animHeading,.vidSectionHeading,.laptopBlockHeading,.doOurBestHeading,.footerHeading{width: 90%;}
+}
+
+@media screen and (max-width: 550px) {
+   .headerHeading img{position: absolute; left: 54px !important;}
+   .imgML{width: 301px;height: 144px;}
+   .imgML1{width: 286px;height: 212px;}
+   .headerBlock h1{font: Bold 53px/64px Montserrat;}
+   .headerBlock p {font: Bold 14px/18px Montserrat;}
+   .imgSection{height: 49.4vw;}
+   .vidSection{height: 75.6vw;}
+   .iframe img{width: 32px; }
+   .laptopBlockImg{width: 222px;height: 202px;margin-top: 20px}
+   .videoBlock img{width: 48px;height: 33px;}
+}
