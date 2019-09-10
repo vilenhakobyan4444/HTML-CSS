@@ -108,7 +108,7 @@ nav a:hover{color: #16D3B1;}
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 39.474vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -259,7 +259,6 @@ form button:hover{
 }
 
 
-
                             /* ***SECTION*** */
                             /* ***SECTION*** */
 
@@ -282,8 +281,8 @@ form button:hover{
 @keyframes karusel{
     0%{left: 0px;}
     25%{left: 0px;}
-    50%{left: -100%;}
-    75%{left: -165%;}
+    50%{left: 0%;}
+    75%{left: 0%;}
     100%{left: 0;}
     /* 100% {top: 100px;} */
 }
