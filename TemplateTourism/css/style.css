@@ -5,6 +5,7 @@ html,body, .container{
     margin: 0;
     height: 100%;
     height: 2000px;
+    scroll-behavior: smooth;
 }
 
                                 /* ***HEADER*** */
@@ -56,6 +57,33 @@ html,body, .container{
     justify-content: space-between;
     width: 80%;
     margin: auto;
+    position: relative;
+}
+.dropMenu{
+    width: 80%;
+    display: none;
+    margin: auto;
+}
+.dropMenu a{
+    display: block;
+    padding: 15px 23px;
+    color: #394C5F;
+    transition: .3s;
+}
+.dropMenu a:hover{
+    color: #16D3B1;
+    background: #EEEEEE;
+}
+.navbarIconDiv{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;
+}
+.navbarIconDiv i{
+    font-size: 30px;
+    color: #2C3E50;
 }
 nav{
     display: flex;
@@ -141,13 +169,15 @@ nav a:hover{color: #16D3B1;}
     width: 100%;
     height: 80px;
     background: #2C3E50;
-    border-top: 1px solid rgb(63, 87, 112)
+    border-top: 1px solid rgb(63, 87, 112);
+    padding-bottom:12px;
 }
 .serchBar{
     width: 80%;
     display: flex;
     margin: auto;
     align-items: center;
+    text-align: center;
 }
 .borderDiv{
     width: 14%;
@@ -168,7 +198,11 @@ form span{
     font-size: 19px;
     margin: 0 10px;
 }
-form{width: 86%;}
+form{
+    width: 86%;
+    display: flex;
+    justify-content: center;
+}
 form input{
     width: 27%;
     outline: none;
@@ -236,7 +270,6 @@ form button:hover{
     color: #2C3E50;
 }  
 .sliderSection{
-    border: solid;
     padding: 0 0 6em;
     width: 3326px;
     overflow: hidden;
@@ -254,7 +287,6 @@ form button:hover{
     100%{left: 0;}
     /* 100% {top: 100px;} */
 }
-
 .imgBlock{
     width: 241px;
     display: inline-block;
@@ -293,7 +325,8 @@ form button:hover{
 .holidaysType span{
     width: 126px;
 	height: 126px;
-	display: inline-block;
+    display: inline-block;
+    margin: 10px;
 }
 .holidaysType a{
     display: block;
@@ -308,8 +341,10 @@ form button:hover{
 }
 .icons{
     display: flex;
-    justify-content: space-evenly;
     padding: 0 0 9vw 0;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
 }
 .icon1{
 	background: url(../img/big-icons.png) no-repeat 0px -126px;
@@ -357,10 +392,12 @@ form button:hover{
 
 .sliderClients{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+    padding-bottom: 5.5vw;
 }
 .sliderClients>div{
-    width: 21%;
+    width: 300px;
     background: #eee;
     padding: 16px;
     border-top: 5px solid #1DD2AF;
@@ -384,4 +421,115 @@ form button:hover{
     color: #999;
     font-size:1vw; 
     
+}
+                                        /* ***FOOTER*** */
+                                        /* ***FOOTER*** */
+                                        /* ***FOOTER*** */
+
+footer{
+    display: flex;
+    justify-content: center;
+    background: #2C3E50;
+    padding: 26px 0;
+}
+footer>div{
+    width: 237px;
+    padding: 20px;
+}
+footer a{
+    color: white;
+    font-size: 0.875em;
+}                 
+footer h3{
+    color: #16D3B1;
+}              
+footer p{
+    color: white;
+    font-size: 0.92em;
+}        
+footer input{
+    padding: 9px;
+}
+footer div:first-child>button{
+    border: none;
+    outline: none;
+    background: #16D3B1;
+    color: white;
+    padding: 11px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+footer div:nth-child(3)>a{
+    padding: 7px;
+    margin: 2px;
+    border: 1px solid white;
+    border-radius: 3px;
+    display: inline-block;
+}
+footer img{
+    padding: 3.5px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+footer span{
+    color: #1DD2AF;
+    font-size: 0.8em;
+    line-height: 35px;
+}
+address{
+    color: white;
+    line-height: 20px;
+}
+.footerBottom{
+    border-top: 1px solid #394C5F;
+    background: #2C3E50;;
+    padding-top: 24px;
+}
+.footerBottom a{
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: color .5s;
+    margin: 5px;
+}
+.footerBottom p {
+    color: #7F91A2;
+}
+.footerBottom p>span{transition: color .3s}
+.footerBottom p>span:hover{
+    color: white;
+}
+.footerBottom a:hover{
+    color: #16D3B1;
+}
+.footerBottomContant{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}          
+.topDiv{
+    width: max-content;
+    margin: auto;
+}  
+
+@media only screen and (max-width: 1000px) {
+    nav{display: none;}
+    .navbar{height: 80px;}
+    .navbarIconDiv{display: block;}
+    .contactTop ul li:nth-child(1){display: none}
+    .contactTop ul li:nth-child(2){display: none}
+    .contactTop ul li:nth-child(3){display: none}
+}
+@media only screen and (max-width: 700px) {
+    footer div:first-child{display: none}
+    footer div:nth-child(2){display: none}
+    footer div:nth-child(3){display: none}
+    footer div:nth-child(4){width: auto;}
+    .serchDiv{height: auto;}
+    .serchBar{display: flex; flex-direction: column;}
+    .borderDiv{background-image: none;}
+    form{flex-direction: column;}
+    form input{width: auto;}
+    .borderDiv{width: auto;}
+    form button{margin:22px 0 0 0}
 }
