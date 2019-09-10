@@ -24,6 +24,8 @@ html,body, .container{
 }
 .contactTop span{color: #16D3B1;}
 .contactTop li{
+    display: flex;
+    align-items: center;
     font-size: 14,4px;
     padding: 9px;
     list-style-type: none;
@@ -531,4 +533,7 @@ address{
     form input{width: auto;}
     .borderDiv{width: auto;}
     form button{margin:22px 0 0 0}
+    .sliderContent h1{font-size: 26px}
+    .sliderContent p{font-size: 16px}
+    .sliderContent button{margin: 5px;}
 }
